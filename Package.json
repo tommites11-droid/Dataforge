@@ -1,0 +1,36 @@
+{
+  "name": "dataforge",
+  "version": "1.2.0",
+  "description": "Lightweight, zero-dependency runtime validation for TypeScript - 3kb gzipped, edge-ready",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs",
+    "test": "vitest run",
+    "lint": "eslint src --ext .ts",
+    "dev": "tsup src/index.ts --watch"
+  },
+  "keywords": [
+    "validation",
+    "typescript",
+    "schema",
+    "edge",
+    "zod-alternative",
+    "lightweight"
+  ],
+  "author": "Marco <marco@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/dataforge.git"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "tsup": "^8.0.0",
+    "vitest": "^1.4.0"
+  }
+}
